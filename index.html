@@ -278,7 +278,24 @@
     import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
     import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
     import { getFirestore, doc, setDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
-
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBmsdLBjOkXoWPSJZUFBvVFdy7JKKG1Kyc",
+      authDomain: "ieltsportal-6f639.firebaseapp.com",
+      projectId: "ieltsportal-6f639",
+      storageBucket: "ieltsportal-6f639.firebasestorage.app",
+      messagingSenderId: "214473182619",
+      appId: "1:214473182619:web:31482a1075102a64dbe53e",
+      measurementId: "G-EVXG9VZ5MB"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
     // =========================================================================
     // 1. BOOK METADATA & COMPLETE 300-UNIT SYLLABUS DEFINITIONS
     // =========================================================================
